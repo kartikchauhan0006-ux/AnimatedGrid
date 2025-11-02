@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .itemsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    .item {
+      border: 1px solid black;
+      cursor: pointer;
+      &.clicked {
+        background-color: grey;
+      }
+    }
+  }
+}
